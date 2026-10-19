@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "sneaky_player_names",
+	"version": "${version}",
+	"name": "Sneaky Player Names",
+	"description": "A client-side fabric mod hiding player names if they’re not in sight, or if they’re too far.",
+	"authors": [
+		"Léo-21"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/sneaky-player-names",
+		"sources": "https://github.com/architects-land/sneaky-player-names"
+	},
+	"license": "MIT",
+	"icon": "assets/sneaky_player_names/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"me.leo21.sneaky_names.SneakyPlayerNames"
+		]
+	},
+	"mixins": [
+		"sneaky_player_names.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25"
+	}
+}
